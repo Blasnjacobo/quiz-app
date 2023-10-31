@@ -1,11 +1,10 @@
 import './App.css'
+import { AppRouter } from './AppRouter'
 
 function App () {
   return (
     <div className='App'>
-      <h1 className='text-3xl font-bold underline'>
-        <p>hello world</p>
-      </h1>
+      <AppRouter />
     </div>
   )
 }
