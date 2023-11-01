@@ -10,7 +10,8 @@ const Question = (
     questionsFiltered,
     indexQuestion,
     setIndexQuestion,
-    setActiveQuiz
+    setActiveQuiz,
+    shuffleArray
   }
 ) => {
   const [score, setScore] = useState(0)
@@ -64,7 +65,7 @@ const Question = (
               {indexQuestion + 1} / {questionsFiltered.length}
             </span>
             <div>
-              <span className='font-semibold'>Dificulty: </span>
+              <span className='font-semibold'>Difficulty: </span>
               <span className='font-bold'>
                 {/* La dificultad de la pregunta */}
                 {filteredQuestion.difficulty}
@@ -116,7 +117,7 @@ const Question = (
                   setActiveResults(true)
                 }}
               >
-                finalizar
+                finish
               </button>
               )
             : (
@@ -124,7 +125,7 @@ const Question = (
                 className='border-2 border-yellow-600 text-yellow-600 rounded-md px-5 py-2 hover:bg-yellow-600 hover:text-black font-medium'
                 onClick={onNextQuestion}
               >
-                Siguiente pregunta
+                Next Question
               </button>
               )
 }

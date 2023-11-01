@@ -1,7 +1,6 @@
 /* eslint-disable no-undef */
 import Science from '../assets/Science.jpg'
 import Sports from '../assets/Sports.jpg'
-import Philosophy from '../assets/Philosophy.jpg'
 import Geography from '../assets/Geography.jpg'
 import History from '../assets/History.jpg'
 import Art from '../assets/Art.jpg'
@@ -10,7 +9,6 @@ import Technology from '../assets/Technology.jpg'
 export const imgs = [
   Science,
   Sports,
-  Philosophy,
   Geography,
   History,
   Art,
@@ -20,7 +18,6 @@ export const imgs = [
 export const categories = [
   { category: 'Science', img: Science, color: 'from-red-500 to-pink-500' },
   { category: 'Sports', img: Sports, color: 'from-orange-500 to-brown-500' },
-  { category: 'Philosophy', img: Philosophy, color: 'from-green-500 to-blue-500' },
   { category: 'Geography', img: Geography, color: 'from-purple-500 to-pink-500' },
   { category: 'History', img: History, color: 'from-red-500 to-orange-500' },
   { category: 'Art', img: Art, color: 'from-gray-500 to-blue-500' },
@@ -30,877 +27,786 @@ export const categories = [
 export const questions = [
   {
     id: 1,
-    difficulty: 'Fácil',
-    question: '¿Qué evento inició la Primera Guerra Mundial?',
-    category: 'History',
+    difficulty: 'Easy',
+    question: 'Who is the author of the book A Brief History of Time: From the Big Bang to Black Holes?',
+    category: 'Science',
     correct_answer:
-    'El asesinato del Archiduque Franz Ferdinand de Austria',
+    'Stephen Hawking',
     incorrect_answers: [
-      'El hundimiento del Titanic',
-      'La invasión de Polonia por Alemania',
-      'La Revolución Francesa'
+      'Michio Kaku',
+      'Neil deGrasse Tyson',
+      'Brian Greene'
     ]
   },
   {
     id: 2,
-    difficulty: 'Fácil',
-    question: '¿Quién es el autor de "Cien años de soledad"?        ',
-    category: 'Art',
-    correct_answer: 'Gabriel García Márquez',
+    difficulty: 'Medium',
+    question: 'Which of the following technological developments came first?"?        ',
+    category: 'Science',
+    correct_answer: 'telescope',
     incorrect_answers: [
-      'Julio Cortázar',
-      'Mario Vargas Llosa',
-      'Pablo Neruda'
+      'teletype',
+      'telegraph',
+      'telephone'
     ]
   },
   {
     id: 3,
-    difficulty: 'Fácil',
-    question: '¿En qué deporte se utiliza un disco?',
+    difficulty: 'Hard',
+    question: 'Who is known for creating the binomial nomenclature of plants?',
     category: 'Science',
-    correct_answer: 'Hockey sobre hielo',
-    incorrect_answers: ['Fútbol', 'Baloncesto', 'Béisbol']
+    correct_answer: 'Carl Linnaeus',
+    incorrect_answers: ['Charles Darwin', 'Georges Cuvier', 'Theophrastus']
   },
   {
     id: 4,
-    difficulty: 'Medio',
+    difficulty: 'Hard',
     question:
-    "¿Qué sustancia es conocida como la 'molécula de la vida'?",
+    'Who developed the carbon-14 dating technique of dating fossils and archaeological specimens?',
     category: 'Science',
-    correct_answer: 'El ADN',
-    incorrect_answers: ['La glucosa', 'La insulina', 'La proteína']
+    correct_answer: 'Willard Libby',
+    incorrect_answers: ['James R. Arnold', 'Mario J. Molina', 'Leona Woods']
   },
   {
     id: 5,
-    difficulty: 'Difícil',
+    difficulty: 'Hard',
     question:
-    '¿Quién es considerado el padre de la filosofía occidental?',
-    category: 'Philosophy',
-    correct_answer: 'Sócrates',
-    incorrect_answers: ['Aristóteles', 'Platón', 'Nietzsche']
+    'Which of these trees is known as a living fossil?',
+    category: 'Science',
+    correct_answer: 'Ginkgo',
+    incorrect_answers: ['Lady fern', 'Cycas', 'Pinus']
   },
   {
     id: 6,
-    difficulty: 'Medio',
-    question: '¿En qué año fue fundada la compañía Apple?',
-    category: 'Technology',
-    correct_answer: '1976',
-    incorrect_answers: ['1984', '1991', '1967']
+    difficulty: 'Medium',
+    question: 'The only living reptiles that use a vertical limb posture in walking is:',
+    category: 'Science',
+    correct_answer: 'Crocodile',
+    incorrect_answers: ['Turtle', 'Snake', 'Lizard']
   },
   {
     id: 7,
-    difficulty: 'Fácil',
-    question: '¿Cuál es el río más largo del mundo?',
-    category: 'Geography',
-    correct_answer: 'El Río Amazonas',
+    difficulty: 'Hard',
+    question: 'The male reproductive part of a flower is called the:',
+    category: 'Science',
+    correct_answer: 'Stamen',
     incorrect_answers: [
-      'El Río Nilo',
-      'El Río Yangtze',
-      'El Río Misisipi'
+      'Pistil',
+      'Stigma',
+      'Carpel'
     ]
   },
   {
     id: 8,
-    difficulty: 'Medio',
-    question: '¿Cuál es el océano más grande del mundo?',
-    category: 'Geography',
-    correct_answer: 'El Océano Pacífico',
+    difficulty: 'Medium',
+    question: 'The unit of measuring the depth of water is called:',
+    category: 'Science',
+    correct_answer: 'Fathom',
     incorrect_answers: [
-      'El Océano Atlántico',
-      'El Océano Índico',
-      'El Océano Ártico'
+      'Pascal',
+      'Ampere',
+      'Decibel'
     ]
   },
   {
     id: 9,
-    difficulty: 'Difícil',
-    question: '¿Cuál es la obra más famosa de William Shakespeare?',
-    category: 'Art',
-    correct_answer: 'Hamlet',
-    incorrect_answers: ['Romeo y Julieta', 'Macbeth', 'El Rey Lear']
+    difficulty: 'Easy',
+    question: 'In physics, for every action there is an equal and opposite what?',
+    category: 'Science',
+    correct_answer: 'reaction',
+    incorrect_answers: ['impaction', 'subtraction', 'distraction']
   },
   {
     id: 10,
-    difficulty: 'Medio',
-    question: '¿Qué es lo que se mide con la escala de Richter?',
+    difficulty: 'Medium',
+    question: 'What is the name of the first human ancestral fossil found in the year 1974?',
     category: 'Science',
-    correct_answer: 'La magnitud de los terremotos',
+    correct_answer: 'Lucy',
     incorrect_answers: [
-      'La velocidad del sonido',
-      'La intensidad de los huracanes',
-      'La temperatura en grados Fahrenheit'
+      'Charles',
+      'Otzi',
+      'Timothy'
     ]
   },
   {
     id: 11,
-    difficulty: 'Fácil',
-    question: '¿Qué país ganó el primer Mundial de Fútbol?',
-    category: 'Sports',
-    correct_answer: 'Uruguay',
-    incorrect_answers: ['Brasil', 'Argentina', 'Alemania']
+    difficulty: 'Medium',
+    question: 'The scientific study of fishes is known as:',
+    category: 'Science',
+    correct_answer: 'Ichthyology',
+    incorrect_answers: ['Ornithology', 'Paleontology', 'Entomology']
   },
   {
     id: 12,
-    difficulty: 'Medio',
-    question: '¿Qué es el efecto invernadero?',
+    difficulty: 'Easy',
+    question: 'Who invented the World Wide Web?',
     category: 'Science',
     correct_answer:
-    'Un fenómeno atmosférico que retiene el calor en la Tierra',
+    'A laboratory in Switzerland',
     incorrect_answers: [
-      'Un tipo de casa de vidrio para plantas',
-      'Un proceso químico para conservar alimentos',
-      'Un tipo de sistema de calefacción para edificios'
+      'the Federal Communications Commission',
+      'Microsoft',
+      'Apple'
     ]
   },
   {
     id: 13,
-    difficulty: 'Medio',
+    difficulty: 'Easy',
     question:
-    '¿En qué año se celebraron los primeros Juegos Olímpicos modernos?',
-    category: 'Sports',
-    correct_answer: '1896',
-    incorrect_answers: ['1900', '1924', '1936']
+    'The capacity of a material to deform permanently in response to stress is called:',
+    category: 'Science',
+    correct_answer: 'Ductility',
+    incorrect_answers: ['Malleability', 'Reflectivity', 'Elasticity']
   },
   {
     id: 14,
-    difficulty: 'Fácil',
-    question: '¿Cuál es el planeta más grande del sistema solar?',
+    difficulty: 'Medium',
+    question: 'Which of these gases solidifies to form dry ice?',
     category: 'Science',
-    correct_answer: 'Júpiter',
-    incorrect_answers: ['Saturno', 'Neptuno', 'Urano']
+    correct_answer: 'Carbon dioxide',
+    incorrect_answers: ['Helium', 'Nitrous oxide', 'Sulfur dioxide']
   },
   {
     id: 15,
-    difficulty: 'Fácil',
-    question: "¿Quién escribió la obra 'Don Quijote de la Mancha'?",
-    category: 'Art',
-    correct_answer: 'Miguel de Cervantes',
+    difficulty: 'Easy',
+    question: 'Faraday is a unit of measurement for:',
+    category: 'Science',
+    correct_answer: 'Electricity',
     incorrect_answers: [
-      'Federico García Lorca',
-      'Gabriel García Márquez',
-      'Pablo Neruda'
+      'Temperature',
+      'Power',
+      'Sound'
     ]
   },
   {
     id: 16,
-    difficulty: 'Medio',
+    difficulty: 'Medium',
     question:
-    '¿Cuál es el elemento químico más abundante en la Tierra?',
-    category: 'Science',
-    correct_answer: 'Oxígeno',
-    incorrect_answers: ['Nitrógeno', 'Hierro', 'Silicio']
+    'Who won the 10th Italian Open title in 2021?',
+    category: 'Sports',
+    correct_answer: 'Rafael Nadal',
+    incorrect_answers: ['Dominic Thiem', 'Novack Djokovic', 'Stefanos Tsitsipas']
   },
   {
     id: 17,
-    difficulty: 'Medio',
-    question: '¿Cuál es el país más poblado del mundo?',
-    category: 'Geography',
-    correct_answer: 'China',
-    incorrect_answers: ['India', 'Estados Unidos', 'Brasil']
+    difficulty: 'Medium',
+    question: 'Only three countries have won the Women’s Rugby World Cup- New Zealand, England, and who?',
+    category: 'Sports',
+    correct_answer: 'USA',
+    incorrect_answers: ['Argentina', 'Romania', 'Georgia']
   },
   {
     id: 18,
-    difficulty: 'Medio',
+    difficulty: 'Hard',
     question:
-    '¿Quién es considerado el padre de la filosofía occidental?',
-    category: 'Philosophy',
-    correct_answer: 'Sócrates',
-    incorrect_answers: ['Platón', 'Aristóteles', 'Descartes']
+    'The term ‘Dolphin Kick’ is associated with which of the following games?',
+    category: 'Sports',
+    correct_answer: 'Swimming',
+    incorrect_answers: ['Golf', 'Squash', 'Badminton']
   },
   {
     id: 19,
-    difficulty: 'Difícil',
-    question: '¿Qué científico propuso la teoría del Big Bang?',
-    category: 'Science',
-    correct_answer: 'Georges Lemaître',
+    difficulty: 'Medium',
+    question: 'Where is the footballer Vinicious Jr from?',
+    category: 'Sports',
+    correct_answer: 'Brazil',
     incorrect_answers: [
-      'Albert Einstein',
-      'Stephen Hawking',
-      'Isaac Newton'
+      'Spain',
+      'Argentina',
+      'England'
     ]
   },
   {
     id: 20,
-    difficulty: 'Fácil',
-    question: '¿Quién es el autor de la novela "El viejo y el mar"?',
-    category: 'Art',
-    correct_answer: 'Ernest Hemingway',
+    difficulty: 'Easy',
+    question: 'Which team won the Superbowl on february 2023',
+    category: 'Sports',
+    correct_answer: 'Kansas City Chiefs',
     incorrect_answers: [
-      'William Shakespeare',
-      'J.K. Rowling',
-      'F. Scott Fitzgerald'
+      'Patriots New England',
+      'Buffalo Bills',
+      'LA Rams'
     ]
   },
   {
     id: 21,
-    difficulty: 'Fácil',
-    question: '¿Cuál es el órgano más grande del cuerpo humano?',
-    category: 'Science',
-    correct_answer: 'La piel',
-    incorrect_answers: ['El hígado', 'El corazón', 'Los pulmones']
+    difficulty: 'Easy',
+    question: 'Which of the following footballers has the world record for the highest goal scorer for a single club?',
+    category: 'Sports',
+    correct_answer: 'Lionel Messi',
+    incorrect_answers: ['Cristiano Ronaldo SIIIUUU', 'Gerd Muller', 'Pele']
   },
   {
     id: 22,
-    difficulty: 'Medio',
-    question: '¿Quién es el creador del sistema operativo Linux?',
-    category: 'Technology',
-    correct_answer: 'Linus Torvalds',
+    difficulty: 'Medium',
+    question: 'What does 2022’s Super Bowl have in common with 2021’s Super Bowl?',
+    category: 'Sports',
+    correct_answer: 'One of the teams is playing in their home stadium',
     incorrect_answers: [
-      'Steve Jobs',
-      'Bill Gates',
-      'Mark Zuckerberg'
+      'No fans will attend the Super Bowl event',
+      'There will be no TV commercials in the US broadcast for the event',
+      'Super Bowl will have the same referee as last year'
     ]
   },
   {
     id: 23,
-    difficulty: 'Medio',
-    question: '¿En qué año terminó la Segunda Guerra Mundial?',
-    category: 'History',
-    correct_answer: '1945',
-    incorrect_answers: ['1939', '1941', '1943']
+    difficulty: 'Medium',
+    question: 'Thomas Cup and Uber Cup are prestigious trophies of which sport?',
+    category: 'Sports',
+    correct_answer: 'Badminton',
+    incorrect_answers: ['Lawn Tennis', 'Table Tennis', 'Golf']
   },
   {
     id: 24,
-    difficulty: 'Fácil',
-    question: '¿Cuál es el planeta más cercano al Sol?',
-    category: 'Science',
-    correct_answer: 'Mercurio',
-    incorrect_answers: ['Venus', 'Marte', 'Júpiter']
+    difficulty: 'Medium',
+    question: 'In which year did Roger Federer win his first Wimbledon title?',
+    category: 'Sports',
+    correct_answer: '2003',
+    incorrect_answers: ['1997', '1998', '2001']
   },
   {
     id: 25,
-    difficulty: 'Medio',
+    difficulty: 'Easy',
     question:
-    "¿Qué escritor es conocido por haber escrito 'Cien años de soledad'?",
-    category: 'Art',
-    correct_answer: 'Gabriel García Márquez',
+    'Where is going to take place the FIFA World Cup 2026?',
+    category: 'Sports',
+    correct_answer: 'USA, Mexico and Canada',
     incorrect_answers: [
-      'Jorge Luis Borges',
-      'Pablo Neruda',
-      'Julio Cortázar'
+      'Morocco, Spain, and Portugal',
+      'Qatar',
+      'Uruguay, Argentina and Chile'
     ]
   },
   {
     id: 26,
-    difficulty: 'Difícil',
+    difficulty: 'Medium',
     question:
-    '¿Qué país es el más grande en términos de superficie terrestre?',
-    category: 'Geography',
-    correct_answer: 'Rusia',
-    incorrect_answers: ['Estados Unidos', 'China', 'Australia']
+    'The term “chip shot” is associated with which game?',
+    category: 'Sports',
+    correct_answer: 'Football',
+    incorrect_answers: ['Hockey', 'Basketball', 'Tennis']
   },
   {
     id: 27,
-    difficulty: 'Medio',
-    question: '¿Cuál es la capital de Canadá?',
-    category: 'Geography',
-    correct_answer: 'Ottawa',
-    incorrect_answers: ['Toronto', 'Montreal', 'Vancouver']
+    difficulty: 'Medium',
+    question: 'How many NBA champions trophies does Stephen Curry has?',
+    category: 'Sports',
+    correct_answer: 'Four',
+    incorrect_answers: ['Three', 'Two', 'Five']
   },
   {
     id: 28,
-    difficulty: 'Fácil',
-    question: '¿Qué elemento químico tiene el símbolo H?',
-    category: 'Science',
-    correct_answer: 'Hidrógeno',
-    incorrect_answers: ['Helio', 'Hierro', 'Hormigón']
+    difficulty: 'Medium',
+    question: 'Who is hosting the Summer Olympic Games in 2028?',
+    category: 'Sports',
+    correct_answer: 'Los Angeles',
+    incorrect_answers: ['Paris', 'Mexico City', 'London']
   },
   {
     id: 29,
-    difficulty: 'Medio',
+    difficulty: 'Easy',
     question:
-    '¿Qué jugador de fútbol ha ganado más Balones de Oro en la History?',
+    'Which fotballer won the trophy Ballon dOr in 2023',
     category: 'Sports',
     correct_answer: 'Lionel Messi',
     incorrect_answers: [
-      'Cristiano Ronaldo',
-      'Johan Cruyff',
-      'Diego Maradona'
+      'Mbappe',
+      'Haaland',
+      'De Bruyne'
     ]
   },
   {
     id: 30,
     difficulty: 'Fácil',
-    question: '¿En qué año ocurrió la Revolución Francesa?',
-    category: 'History',
-    correct_answer: '1789',
-    incorrect_answers: ['1848', '1917', '1492']
+    question: 'Who is the graetest basketballer in history?',
+    category: 'Sports',
+    correct_answer: 'Michael Jordan',
+    incorrect_answers: ['Kobe Bryan', 'Lebron James', 'Stephen Curry']
   },
   // -------------------
   {
     id: 31,
-    difficulty: 'Fácil',
-    category: 'Technology',
-    question: '¿Qué significa la sigla HTML?',
-    correct_answer: 'HyperText Markup Language',
+    difficulty: 'Hard',
+    category: 'Geography',
+    question: ' Which of these U.S. states does NOT border Canada',
+    correct_answer: 'Indiana',
     incorrect_answers: [
-      'Hyperlinks and Text Markup Language',
-      'Home Tool Markup Language',
-      'Hyperlinking Text Markup Language'
+      'Alaska',
+      'Maine',
+      'Minnesota'
     ]
   },
   {
     id: 32,
-    difficulty: 'Fácil',
-    category: 'Technology',
-    question: '¿Cuál es el navegador web más utilizado en el mundo?',
-    correct_answer: 'Google Chrome',
-    incorrect_answers: ['Safari', 'Firefox', 'Internet Explorer']
+    difficulty: 'Medium',
+    category: 'Geography',
+    question: ' Which of these countries was NOT a part of the Soviet Union?',
+    correct_answer: 'Poland',
+    incorrect_answers: ['Belarus', 'Georgia', 'Ukraine']
   },
   {
     id: 33,
-    difficulty: 'Fácil',
-    category: 'Technology',
+    difficulty: 'Medium',
+    category: 'Geography',
     question:
-    '¿Qué lenguaje de programación es más utilizado para el desarrollo web?',
-    correct_answer: 'JavaScript',
-    incorrect_answers: ['Python', 'Java', 'C++']
+    'Which of these cities is NOT a national capital?',
+    correct_answer: 'Sydney',
+    incorrect_answers: ['Bangkok', 'Cairo', 'Prague']
   },
   {
     id: 34,
     difficulty: 'Medio',
-    category: 'Technology',
-    question: '¿Qué es un servidor web?',
+    category: 'Geography',
+    question: 'Which of these cities DOESNT border the Mediterranean Sea?',
     correct_answer:
-    'Un programa que recibe y procesa solicitudes HTTP',
+    'Lisbon',
     incorrect_answers: [
-      'Un programa que envía correos electrónicos',
-      'Un programa que protege la privacidad de los usuarios en línea',
-      'Un programa que realiza operaciones matemáticas complejas'
+      'Barcelona',
+      'Alexandria',
+      'Monaco'
     ]
   },
   {
     id: 35,
-    difficulty: 'Medio',
-    category: 'Technology',
-    question: '¿Qué es un ataque de phishing?',
+    difficulty: 'Easy',
+    category: 'Geography',
+    question: 'Which of these countries was NEVER part of the British Empire?',
     correct_answer:
-    'Un intento de obtener información confidencial a través de un correo electrónico falso',
+    'Thailand',
     incorrect_answers: [
-      'Un virus que daña los archivos del ordenador',
-      'Un tipo de ataque DDoS',
-      'Un intento de secuestrar el tráfico de internet'
+      'Kenya',
+      'Ireland',
+      'New Zealand'
     ]
   },
   {
     id: 36,
-    difficulty: 'Medio',
-    category: 'Technology',
-    question: '¿Qué es un archivo CSV?',
+    difficulty: 'Hard',
+    category: 'Geography',
+    question: 'Which one of these cities is NOT in the Southern Hemisphere?',
     correct_answer:
-    'Un archivo de texto con valores separados por comas',
+    'Colombo',
     incorrect_answers: [
-      'Un archivo de audio comprimido',
-      'Un archivo de imagen en formato vectorial',
-      'Un archivo de vídeo de alta definición'
+      'Johannesburg',
+      'Brisbane',
+      'Brasilia'
     ]
   },
   {
     id: 37,
-    difficulty: 'Difícil',
-    category: 'Technology',
-    question: '¿Qué es un algoritmo de cifrado asimétrico?',
+    difficulty: 'Medium',
+    category: 'Geography',
+    question: 'Which one of these countries is NOT in Central America?',
     correct_answer:
-    'Un método de cifrado que utiliza dos claves diferentes',
+    'Suriname',
     incorrect_answers: [
-      'Un método de cifrado que utiliza la misma clave para cifrar y descifrar',
-      'Un método de cifrado que no utiliza claves',
-      'Un método de cifrado que solo se utiliza en aplicaciones militares'
+      'Belize',
+      'Honduras',
+      'Panama'
     ]
   },
   {
     id: 38,
-    difficulty: 'Difícil',
-    category: 'Technology',
-    question: '¿Qué es una red privada virtual (VPN)?',
+    difficulty: 'Medium',
+    category: 'Geography',
+    question: 'Which of these countries is NOT majority-Muslim?',
     correct_answer:
-    'Una conexión segura a una red privada a través de internet',
+    'Ethiopia',
     incorrect_answers: [
-      'Una red de computadoras en una organización',
-      'Una red de computadoras conectadas a internet',
-      'Una red de computadoras que solo utiliza tecnología inalámbrica'
+      'Albania',
+      'Indonesia',
+      'Morocco'
     ]
   },
   {
     id: 39,
-    difficulty: 'Difícil',
-    question: '¿En qué año se produjo la Guerra de los Cien Años?',
-    category: 'History',
-    correct_answer: '1337',
-    incorrect_answers: ['1066', '1415', '1642']
+    difficulty: 'Easy',
+    question: 'Which of these countries is NOT recognized by the United Nations?',
+    category: 'Geography',
+    correct_answer: 'Taiwan',
+    incorrect_answers: ['Cyprus', 'Iran', 'Israel']
   },
   {
     id: 40,
-    difficulty: 'Fácil',
-    question: '¿En qué año se produjo el ataque a Pearl Harbor?',
-    category: 'History',
-    correct_answer: '1941',
-    incorrect_answers: ['1939', '1942', '1945']
+    difficulty: 'Medium',
+    question: 'Which of these mountain ranges is NOT in Europe?',
+    category: 'Geography',
+    correct_answer: 'Atlas Mountains',
+    incorrect_answers: ['The Alps', 'Crpathian Mountains', 'The Pyrenees']
   },
   {
     id: 41,
-    difficulty: 'Medio',
-    question: '¿Qué tratado dio fin a la Primera Guerra Mundial?',
-    category: 'History',
-    correct_answer: 'Tratado de Versalles',
+    difficulty: 'Hard',
+    question: 'Which of these things is NOT located in Africa?',
+    category: 'Geography',
+    correct_answer: 'Gobi Desert',
     incorrect_answers: [
-      'Tratado de Tordesillas',
-      'Tratado de Westfalia',
-      'Tratado de Nankín'
+      'Aswan Dam',
+      'Lake Victoria',
+      'Zambezi River'
     ]
   },
   {
     id: 42,
-    difficulty: 'Difícil',
+    difficulty: 'Hard',
     question:
-    '¿Quién fue el último emperador de la Dinastía Qing en China?',
-    category: 'History',
-    correct_answer: 'Puyi',
-    incorrect_answers: ['Hongwu', 'Wuzong', 'Kangxi']
+    'Which of these cities is NOT in India?',
+    category: 'Geography',
+    correct_answer: 'Karachi',
+    incorrect_answers: ['Bangalore', 'Bhopal', 'Chennai']
   },
   {
     id: 43,
-    difficulty: 'Fácil',
+    difficulty: 'Easy',
     question:
-    '¿Cuál fue el nombre de la primera expedición de Cristóbal Colón?',
-    category: 'History',
-    correct_answer: 'La Santa María',
+    'Which of these countries does NOT have only one border?',
+    category: 'Geography',
+    correct_answer: 'North Korea',
     incorrect_answers: [
-      'La Pinta',
-      'La Niña',
-      'La Santísima Trinidad'
+      'Portugal',
+      'Haiti',
+      'Ireland'
     ]
   },
   {
     id: 44,
-    difficulty: 'Medio',
+    difficulty: 'Easy',
     question:
-    '¿Cuál fue el primer país en enviar un objeto hecho por el hombre a la luna?',
-    category: 'History',
-    correct_answer: 'Estados Unidos',
-    incorrect_answers: ['Unión Soviética', 'China', 'Japón']
+    'Mexican Capital?',
+    category: 'Geography',
+    correct_answer: 'Mexico city',
+    incorrect_answers: ['Guadalajara', 'Culiacan', 'Monterrey']
   },
   {
     id: 45,
-    difficulty: 'Difícil',
+    difficulty: 'Easy',
     question:
-    '¿Cuál fue la primera ciudad en el mundo en tener una población de más de un millón de habitantes?',
-    category: 'History',
-    correct_answer: 'Roma',
-    incorrect_answers: ['Atenas', 'Babilonia', 'Nínive']
+    'United States Capital?',
+    category: 'Geography',
+    correct_answer: 'Washington DC',
+    incorrect_answers: ['New York', 'LA', 'Chicago']
   },
   {
     id: 46,
-    difficulty: 'Fácil',
+    difficulty: 'Easy',
     question:
-    '¿Quién fue el primer presidente de los Estados Unidos?',
+    'Which of these countries did the Soviet Union NEVER invade?',
     category: 'History',
-    correct_answer: 'George Washington',
+    correct_answer: 'Sweden',
     incorrect_answers: [
-      'Thomas Jefferson',
-      'Abraham Lincoln',
-      'Franklin D. Roosevelt'
+      'Afghanistan',
+      'Finland',
+      'Poland'
     ]
   },
   {
     id: 47,
-    difficulty: 'Medio',
-    question: '¿Cuál fue la primera dinastía en gobernar en China?',
+    difficulty: 'Medium',
+    question: 'Who was the first person to orbit the Earth?',
     category: 'History',
-    correct_answer: 'Xia',
-    incorrect_answers: ['Han', 'Tang', 'Song']
+    correct_answer: 'Yuri Gagarin',
+    incorrect_answers: ['Neil Armstrong', 'John Glenn', 'Valentina Tereshkova']
   },
   {
     id: 48,
-    difficulty: 'Fácil',
-    question: '¿Quién escribió la obra "Don Quijote de la Mancha"?',
-    category: 'Art',
-    correct_answer: 'Miguel de Cervantes',
+    difficulty: 'Medium',
+    question: 'Which of these cities was NOT founded by the Romans?',
+    category: 'History',
+    correct_answer: 'Alexandria',
     incorrect_answers: [
-      'Gabriel García Márquez',
-      'Jorge Luis Borges',
-      'Pablo Neruda'
+      'Cologne',
+      'London',
+      'Florentia'
     ]
   },
   {
     id: 49,
-    difficulty: 'Medio',
+    difficulty: 'Medium',
     question:
-    '¿Cuál de las siguientes novelas es escrita por Gabriel García Márquez?',
-    category: 'Art',
-    correct_answer: 'Cien años de soledad',
-    incorrect_answers: [
-      'Rayuela',
-      'La ciudad y los perros',
-      'La casa de los espíritus'
-    ]
-  },
-  {
-    id: 50,
-    difficulty: 'Difícil',
-    question: '¿Quién escribió "La metamorfosis"?',
-    category: 'Art',
-    correct_answer: 'Franz Kafka',
-    incorrect_answers: [
-      'Virginia Woolf',
-      'James Joyce',
-      'F. Scott Fitzgerald'
-    ]
-  },
-  {
-    id: 51,
-    difficulty: 'Fácil',
-    question: '¿Quién escribió "El retrato de Dorian Gray"?',
-    category: 'Art',
+    'Which of these writers was NOT English?',
+    category: 'History',
     correct_answer: 'Oscar Wilde',
     incorrect_answers: [
-      'Edgar Allan Poe',
-      'Emily Bronte',
+      'Jane Austen',
+      'Agatha Christie',
       'Charles Dickens'
     ]
   },
   {
+    id: 50,
+    difficulty: 'Medium',
+    question: 'The spinning jenny was one of the earliest innovations in the Industrial Revolution. What was a spinning jenny?',
+    category: 'History',
+    correct_answer: 'A device for making cloth',
+    incorrect_answers: [
+      'A device for storing energy',
+      'A steam engine',
+      'A water pump'
+    ]
+  },
+  {
+    id: 51,
+    difficulty: 'Medium',
+    question: 'Which of the following was a result of Maos "Great Leap Forward", a plan to remake Chinas agrarian economy?',
+    category: 'History',
+    correct_answer: 'A famine that killed 36 million people',
+    incorrect_answers: [
+      'Improved standard of living',
+      'Not much really changed',
+      'The overthrow of Mao'
+    ]
+  },
+  {
     id: 52,
-    difficulty: 'Medio',
+    difficulty: 'Easy',
     question:
-    '¿Cuál de las siguientes obras no fue escrita por William Shakespeare?',
-    category: 'Art',
-    correct_answer: 'Moby Dick',
-    incorrect_answers: ['Hamlet', 'Macbeth', 'Otelo']
+    'Which event triggered World War One?',
+    category: 'History',
+    correct_answer: 'The assassination of Archduke Francis Ferdinand',
+    incorrect_answers: ['Germanys invasion of Poland', 'The sinking of the Lusitania', 'The tsars refusal of an offer to visit Germany']
   },
   {
     id: 53,
-    difficulty: 'Difícil',
+    difficulty: 'Medium',
     question:
-    '¿Cuál de las siguientes obras de José Saramago recibió el Premio Nobel de Art?',
-    category: 'Art',
-    correct_answer: 'Ensayo sobre la ceguera',
+    'What was the Byzantine Empire',
+    category: 'History',
+    correct_answer: 'A continuation of the Roman Empire',
     incorrect_answers: [
-      'La caverna',
-      'El evangelio según Jesucristo',
-      'Las intermitencias de la muerte'
+      'An alliance ruled by the Pope',
+      'A confederation of European tribes',
+      'The empire founded by Alexander the Great'
     ]
   },
   {
     id: 54,
-    difficulty: 'Fácil',
+    difficulty: 'Medium',
     question:
-    '¿Quién escribió la novela "El guardián entre el centeno"?',
-    category: 'Art',
-    correct_answer: 'J.D. Salinger',
+    'When was the last time Moscow was ever captured by a foreign power?',
+    category: 'History',
+    correct_answer: 'By Napoleon in 1812',
     incorrect_answers: [
-      'F. Scott Fitzgerald',
-      'Ernest Hemingway',
-      'Tennessee Williams'
+      'By Ogedei Khan in 1238',
+      'By Hitler in 1942',
+      'Never'
     ]
   },
   {
     id: 55,
-    difficulty: 'Difícil',
-    question: '¿Cuál es el país más grande de África?',
-    category: 'Geography',
-    correct_answer: 'Argelia',
+    difficulty: 'Medium',
+    question: 'Which of these is not an element of art?',
+    category: 'Art',
+    correct_answer: 'Balance',
     incorrect_answers: [
-      'Sudán',
-      'Libia',
-      'República Democrática del Congo'
+      'Line',
+      'Texture',
+      'Color'
     ]
   },
   {
     id: 56,
-    difficulty: 'Fácil',
-    question: '¿Cuál es el país más grande del mundo?',
-    category: 'Geography',
-    correct_answer: 'Rusia',
-    incorrect_answers: ['China', 'Estados Unidos', 'Canadá']
+    difficulty: 'Medium',
+    question: 'Which of the following was NOT originally invented in China?',
+    category: 'History',
+    correct_answer: 'Concrete',
+    incorrect_answers: ['Gunpowder', 'Paper money', 'Silk']
   },
   {
     id: 57,
-    difficulty: 'Medio',
-    question: '¿En qué continente se encuentra el lago Baikal?',
-    category: 'Geography',
-    correct_answer: 'Asia',
-    incorrect_answers: ['Europa', 'África', 'América del Sur']
+    difficulty: 'Medium',
+    question: 'During what period of his life did Vincent van Gogh paint his most famous painting "Starry Night"?',
+    category: 'Art',
+    correct_answer: 'He painted it while he was in a mental asylum.',
+    incorrect_answers: ['He painted it while a student at the Royal Academy of Fine Arts', 'He wrote it while visiting his brother Theo in Paris.', 'None']
   },
   {
     id: 58,
-    difficulty: 'Medio',
-    question: '¿Cuál es el país más poblado del mundo?',
-    category: 'Geography',
-    correct_answer: 'China',
-    incorrect_answers: ['India', 'Estados Unidos', 'Indonesia']
+    difficulty: 'Hard',
+    question: 'Edouard Manet, who is considered one of the founders of Impressionism, if he had listened to his father, would never have become an artist. What did his father see the future painter as?',
+    category: 'Art',
+    correct_answer: 'Lawyer',
+    incorrect_answers: ['Doctor', 'Soldier', 'Engineer']
   },
   {
     id: 59,
-    difficulty: 'Difícil',
-    question: '¿Cuál es la montaña más alta del mundo?',
-    category: 'Geography',
-    correct_answer: 'El Monte Everest',
-    incorrect_answers: ['El K2', 'El Mont Blanc', 'El Aconcagua']
+    difficulty: 'Medium',
+    question: 'In which genre did Pierre Auguste Renoir, one of the brightest representatives of Impressionism, paint most of his works?',
+    category: 'Art',
+    correct_answer: 'Portrait',
+    incorrect_answers: ['Animalistic genre', 'Still life', 'Cubism']
   },
   {
     id: 60,
-    difficulty: 'Difícil',
-    question: '¿Cuál es el país más pequeño del mundo?',
-    category: 'Geography',
-    correct_answer: 'El Vaticano',
-    incorrect_answers: ['Mónaco', 'Nauru', 'Tuvalu']
+    difficulty: 'Medium',
+    question: 'In which museum is the painting Flooding at Port-Marly by Alfred Sisley on display?',
+    category: 'Art',
+    correct_answer: 'Musée dOrsay in Paris',
+    incorrect_answers: ['The Hermitage Museum in St. Petersburg', 'The National Gallery in London', 'Louvre Museum']
   },
   {
     id: 61,
-    difficulty: 'Medio',
-    question: '¿Cuál es el país más extenso de África?',
-    category: 'Geography',
-    correct_answer: 'Argelia',
-    incorrect_answers: ['Nigeria', 'Egipto', 'Sudáfrica']
+    difficulty: 'Hard',
+    question: 'Which impressionist painter is the author of the famous painting with the ballerinas, Blue Dancers?',
+    category: 'Art',
+    correct_answer: 'Edgar Degas',
+    incorrect_answers: ['Camille Pissarro', 'Paul Gauguin', 'Van Gogh']
   },
   {
     id: 62,
-    difficulty: 'Fácil',
-    question: '¿Qué país ganó la Copa Mundial de la FIFA en 2018?',
-    category: 'Sports',
-    correct_answer: 'Francia',
-    incorrect_answers: ['Alemania', 'Brasil', 'Argentina']
+    difficulty: 'Easy',
+    question: 'Which artist painted his famous self-portrait with a bandaged ear?',
+    category: 'Art',
+    correct_answer: 'Vincent van Gogh',
+    incorrect_answers: ['Paul Gauguin', 'Picasso', 'Henri Matisse']
   },
   {
     id: 63,
-    difficulty: 'Fácil',
-    question: '¿Qué deporte se juega en Wimbledon?',
-    category: 'Sports',
-    correct_answer: 'Tenis',
-    incorrect_answers: ['Golf', 'Fútbol', 'Rugby']
+    difficulty: 'Easy',
+    question: 'This painting by Pierre Auguste Renoir was the subject of Alain Gauberts film Beautiful Sundays (French: Les Beaux Dimanches dété) from the documentary series Palettes.',
+    category: 'Art',
+    correct_answer: 'Dance at Le moulin de la Galette',
+    incorrect_answers: ['The Swing', 'Mona Lisa', 'Luncheon of the Boating Party']
   },
   {
     id: 64,
-    difficulty: 'Medio',
+    difficulty: 'Medium',
     question:
-    '¿Cuántos puntos vale un touchdown en el fútbol americano?',
-    category: 'Sports',
-    correct_answer: '6',
-    incorrect_answers: ['4', '7', '5']
+    'What did Camille Pissarro do for a living at a time when his work was not yet recognized?',
+    category: 'Art',
+    correct_answer: 'He painted fans',
+    incorrect_answers: ['He painted posters.', 'Washing cars', 'He painted portraits on commission.']
   },
   {
     id: 65,
-    difficulty: 'Medio',
+    difficulty: 'Hard',
     question:
-    '¿Cuál es el jugador de baloncesto con más anillos de campeonato en la NBA?',
-    category: 'Sports',
-    correct_answer: 'Bill Russell',
+    'Impressionist painter who proposed a new artistic method of transmitting shades, called pointillism.',
+    category: 'Art',
+    correct_answer: 'Georges-Pierre Seurat',
     incorrect_answers: [
-      'Michael Jordan',
-      'Kareem Abdul-Jabbar',
-      'LeBron James'
+      'Monet',
+      'Edgar Degas',
+      'Alfred Sisley'
     ]
   },
   {
     id: 66,
-    difficulty: 'Medio',
+    difficulty: 'Medium',
     question:
-    '¿Cuál es el país de origen del futbolista Lionel Messi?',
-    category: 'Sports',
-    correct_answer: 'Argentina',
-    incorrect_answers: ['Brasil', 'España', 'Portugal']
+    'The foundations of the Internet were created when the Defense Advanced Research Projects Agency (DARPA) created ARPANet, the first national network of computers. In what year did this occur?',
+    category: 'Technology',
+    correct_answer: '1969',
+    incorrect_answers: ['1949', '1959', '1983']
   },
   {
     id: 67,
-    difficulty: 'Difícil',
+    difficulty: 'Easy',
     question:
-    '¿En qué año se celebraron los Juegos Olímpicos de Beijing?',
-    category: 'Sports',
-    correct_answer: '2008',
-    incorrect_answers: ['2012', '2004', '2016']
+    'Who invented the World Wide Web (WWW)?',
+    category: 'Technology',
+    correct_answer: 'Tim Berners-Lee',
+    incorrect_answers: ['Marc Andreeson', 'Vinton Cerf', 'Arthur C. Clarke']
   },
   {
     id: 68,
-    difficulty: 'Difícil',
+    difficulty: 'Medium',
     question:
-    '¿Quién es el máximo goleador en la History de la Liga Española?',
-    category: 'Sports',
-    correct_answer: 'Lionel Messi',
+    'Technological determinism means that',
+    category: 'Technology',
+    correct_answer: 'Technology essentially causes certain behaviors.',
     incorrect_answers: [
-      'Cristiano Ronaldo',
-      'Telmo Zarra',
-      'Hugo Sánchez'
+      'That Web radio stations must pay royalties for songs that are accessed',
+      'Specially equipped mobile units transmit live and taped remote reports back to a local station.',
+      'None of the above'
     ]
   },
   {
     id: 69,
-    difficulty: 'Difícil',
-    question: '¿En qué deporte se utiliza el término "smash"?',
-    category: 'Sports',
-    correct_answer: 'Bádminton',
-    incorrect_answers: ['Voleibol', 'Tenis', 'Squash']
+    difficulty: 'Easy',
+    question: 'Analog media was originally used in __________ for media that was analogous to the sound it was recreating. It now refers to all __________.',
+    category: 'Technology',
+    correct_answer: 'Audio recording; non-digitized media.',
+    incorrect_answers: [
+      'Laser technology; satellite transmissions',
+      'Transmitting a digital signal; non-digitized media',
+      'None of the above is correct']
   },
   {
     id: 70,
-    category: 'Philosophy',
-    difficulty: 'Fácil',
-    question: '¿Cuál es la obra más conocida de Platón?',
-    correct_answer: 'La República',
-    incorrect_answers: ['El Banquete', 'Timeo', 'Fedón']
+    category: 'Technology',
+    difficulty: 'Medium',
+    question: 'Digitization is the process in which media',
+    correct_answer: ' Is made into computer-readable form..',
+    incorrect_answers:
+    [
+      'Uses the modulation of the sound carrier wave to the fluctuations of the sound itself.',
+      'Uses the modulation of the sound carrier wave to the fluctuations of the sound itself.',
+      'Receives and sends information slower than other connections.'
+    ]
   },
   {
     id: 71,
-    category: 'Philosophy',
-    difficulty: 'Medio',
+    category: 'Technology',
+    difficulty: 'Medium',
     question:
-    '¿Cuál es el concepto central de la filosofía de Descartes?',
-    correct_answer: 'El cogito ergo sum',
+    'Broadband is a network connection that',
+    correct_answer: ' Allows for more information to be sent in a shorter period of time..',
     incorrect_answers: [
-      'El empirismo',
-      'El materialismo',
-      'La fenomenología'
+      'Stores video and audio information by using laser technology.',
+      'Blends one picture with another in TV production.',
+      'Receives and sends information slower than other connections.'
     ]
   },
   {
     id: 72,
-    category: 'Philosophy',
-    difficulty: 'Difícil',
-    question: '¿Qué es la dialéctica en la filosofía de Hegel?',
+    category: 'Technology',
+    difficulty: 'Hard',
+    question: 'Who in 1837 invented the electromagnetic telegraph, which marked the beginning of todays information age?',
     correct_answer:
-    'El método para llegar a la verdad mediante la contradicción',
+    'Samuel Morse.',
     incorrect_answers: [
-      'La creación de un sistema filosófico',
-      'La negación de la realidad',
-      'El análisis de los procesos cognitivos'
+      'Guglielmo Marconi',
+      'Alexander Graham Bell',
+      'Susan B. Anthony'
     ]
   },
   {
     id: 73,
-    category: 'Philosophy',
-    difficulty: 'Medio',
-    question: '¿Qué es el nihilismo en la filosofía?',
-    correct_answer: 'La negación de todos los valores y creencias',
+    category: 'Technology',
+    difficulty: 'Medium',
+    question: 'Communication satellites have had a great impact on communications in which ways?',
+    correct_answer: 'Both Answers are correct',
     incorrect_answers: [
-      'La afirmación de la existencia de un ser superior',
-      'La creencia en la reencarnación',
-      'La negación de la existencia del mundo externo'
+      'They allow for high-bandwidth communication',
+      'They allow for communication in remote corners of the earth where land lines or other ground-based modes of communication do not exist',
+      'None of the answers are correct'
     ]
   },
   {
     id: 74,
-    category: 'Philosophy',
-    difficulty: 'Difícil',
+    category: 'Technology',
+    difficulty: 'Hard',
     question:
-    '¿Qué es la deconstrucción en la filosofía de Jacques Derrida?',
+    'In what year did Arthur C. Clarke, famed science fiction writer, first propose the communication satellite?',
     correct_answer:
-    'El análisis crítico de la relación entre los significados y los conceptos',
+    '1945.',
     incorrect_answers: [
-      'La creación de nuevos conceptos a partir de la combinación de los antiguos',
-      'La búsqueda de la verdad absoluta',
-      'La negación de la existencia del lenguaje'
+      '1925',
+      '1935',
+      '1955'
     ]
   },
   {
     id: 75,
-    category: 'Philosophy',
-    difficulty: 'Fácil',
-    question: '¿Qué es la ética?',
-    correct_answer:
-    'La rama de la filosofía que estudia la moral y la conducta humana',
-    incorrect_answers: [
-      'La rama de la filosofía que estudia la lógica',
-      'La rama de la filosofía que estudia la mente',
-      'La rama de la filosofía que estudia el conocimiento'
-    ]
-  },
-  {
-    id: 76,
-    category: 'Philosophy',
-    difficulty: 'Medio',
-    question:
-    '¿Qué es el imperativo categórico en la filosofía de Kant?',
-    correct_answer:
-    'La regla moral que se debe seguir en cualquier situación',
-    incorrect_answers: [
-      'La creencia en la existencia de un Dios creador',
-      'La negación de la libertad humana',
-      'La afirmación de la existencia de una verdad absoluta'
-    ]
-  },
-  {
-    id: 77,
-    difficulty: 'Fácil',
-    question: '¿Quién fue el autor de la obra "La República"?',
-    category: 'Philosophy',
-    correct_answer: 'Platón',
-    incorrect_answers: ['Aristóteles', 'Sócrates', 'Nietzsche']
-  },
-  {
-    id: 78,
-    difficulty: 'Medio',
-    question:
-    '¿Cuál es el término filosófico para referirse al estudio del conocimiento?',
-    category: 'Philosophy',
-    correct_answer: 'Epistemología',
-    incorrect_answers: ['Ontología', 'Metafísica', 'Lógica']
-  },
-  {
-    id: 79,
-    difficulty: 'Difícil',
-    question:
-    '¿Quién escribió el libro "El mundo como voluntad y representación"?',
-    category: 'Philosophy',
-    correct_answer: 'Arthur Schopenhauer',
-    incorrect_answers: [
-      'Friedrich Nietzsche',
-      'Immanuel Kant',
-      'Jean-Paul Sartre'
-    ]
-  },
-  {
-    id: 80,
-    difficulty: 'Difícil',
-    question: '¿Cuál es la partícula subatómica más pesada?',
-    category: 'Science',
-    correct_answer: 'Quark top',
-    incorrect_answers: ['Electrón', 'Protón', 'Neutrón']
-  },
-  {
-    id: 81,
-    category: 'Science',
-    difficulty: 'Medio',
-    question: '¿Qué es la capa de ozono?',
-    correct_answer:
-    'Una capa de gas que protege la Tierra de la radiación ultravioleta del sol',
-    incorrect_answers: [
-      'Una capa de nubes en la atmósfera',
-      'La capa más externa de la Tierra',
-      'Una capa de gases que produce el efecto invernadero'
-    ]
-  },
-  {
-    id: 82,
-    category: 'Science',
-    difficulty: 'Difícil',
-    question: '¿Qué es la antimateria?',
-    correct_answer:
-    'Una forma de materia que tiene propiedades opuestas a la materia ordinaria',
-    incorrect_answers: [
-      'Una forma de materia que no tiene carga eléctrica',
-      'Una forma de materia que no tiene masa',
-      'Una forma de energía que tiene la capacidad de desintegrar la materia'
-    ]
-  },
-  {
-    id: 83,
-    difficulty: 'Fácil',
-    question: '¿Qué es el acrónimo "CPU" en inglés?',
     category: 'Technology',
-    correct_answer: 'Central Processing Unit',
+    difficulty: 'Medium',
+    question: 'Characteristics of the peer-to-peer (P2P) network model include:',
+    correct_answer:
+    'All of the above.',
     incorrect_answers: [
-      'Computer Personal Unit',
-      'Central Personal Unit',
-      'Computer Processing Unit'
+      'Decentralized and non-hierarchical',
+      'Interconnected group of computers',
+      'A network of computers with equal ability to send, store and receive information'
     ]
-  },
-  {
-    id: 84,
-    difficulty: 'Medio',
-    question:
-    '¿Cuál es el nombre de la primera computadora electrónica digital?',
-    category: 'Technology',
-    correct_answer: 'ENIAC',
-    incorrect_answers: ['UNIVAC', 'COLOSSUS', 'EDSAC']
   }
 ]

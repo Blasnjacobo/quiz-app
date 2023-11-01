@@ -9,7 +9,7 @@ import quiz from '../assets/quiz.jpg'
 
 const shuffleArray = (array) => {
   const RandomQuestions = array.sort(() => Math.random() - 0.5)
-  return RandomQuestions.slice(0, 5)
+  return RandomQuestions.slice(0, 10)
 }
 export const CategoryPage = () => {
   const { category } = useParams()
@@ -43,7 +43,7 @@ export const CategoryPage = () => {
           />)
         : (
           <>
-            <h1 className='text-3xl text-teal-900 text-center font-bold'>
+            <h1 className='text-3xl text-teal-900 font-bold'>
               {category}
             </h1>
             <div className='flex justify-center items-center'>
@@ -53,7 +53,7 @@ export const CategoryPage = () => {
               className='text-white bg-gray-900 py-2 rounded-lg font-bold px-5 transition-all hover:bg-yellow-500 hover:text-gray-900'
               onClick={() => setActiveQuiz(true)}
             >
-              Iniciar quiz
+              Start Quiz
             </button>
           </>
           )}
